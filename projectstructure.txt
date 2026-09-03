@@ -1,0 +1,6 @@
+TinyGPT/
+│
+├── tiny_gpt.py
+├── input.txt
+├── Mygpt.pt
+└── README.md
