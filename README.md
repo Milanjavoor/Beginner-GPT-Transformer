@@ -161,3 +161,35 @@ TinyGPT uses Pre-LayerNorm.
 *Feed-Forward Network
 
 After self-attention, the representation passes through a position-wise feed-forward network.
+
+
+
+Educational Philosophy
+
+The central idea behind this project is:
+
+Don't just use Transformers. Understand them.
+
+Modern frameworks make it possible to load and use powerful Transformer models with only a few lines of code.
+
+However, implementing a small Transformer from scratch provides a much deeper understanding of the architecture.
+
+By building TinyGPT manually, the Transformer becomes less of a black box and more of a system that can be inspected, modified, debugged, and experimented with.
+
+This project therefore focuses on understanding the fundamental ideas behind GPT rather than simply achieving the largest possible model or the best possible generated text.
+
+Inspiration
+
+This project follows the educational philosophy of implementing a minimal GPT architecture from first principles.
+
+It is particularly inspired by the work of Andrej Karpathy and the educational approach demonstrated through nanoGPT and related Transformer-from-scratch implementations.
+
+Author
+
+Milan Javoor
+
+This project is part of a hands-on learning journey focused on Deep Learning, Transformers, Large Language Models, and AI Engineering.
+
+License
+
+This project is intended primarily for educational and research purposes.
