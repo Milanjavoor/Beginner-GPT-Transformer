@@ -114,3 +114,50 @@ Token Embedding        Positional Embedding
                  |
                  v
           Generated Text
+Model Configuration
+
+The model uses the following configuration:
+
+Parameter	Value	Description
+
+
+
+Batch Size      	    -64-	    Number of sequences processed simultaneously
+Block Size              -128-    	Maximum context length
+Embedding- Dimension-	192	        Dimension of token representations
+Attention Heads-	    6-	        Number of attention heads
+Transformer Layers-	    6-	        Number of Transformer blocks
+Dropout-	            0.1-        Dropout probability
+Learning Rate-	        3e-4-	    AdamW learning rate
+Training Iterations-	3000-	    Number of training iterations
+Evaluation Interval-	300-	    Frequency of evaluation
+
+
+Main characteristics:
+
+*Tokenization
+
+This project uses character-level tokenization.
+
+Instead of splitting text into words or subwords, every unique character appearing in the dataset becomes a token.
+
+*Self-Attention
+
+Self-attention allows every token to determine which previous tokens are important when producing its representation.
+
+*Causal Masking
+
+Because TinyGPT is an autoregressive language model, a token must not be allowed to see future tokens.
+*Multi-Head Attention
+
+Instead of using a single attention mechanism, TinyGPT uses multiple independent attention heads.
+*Autoregressive Generation
+
+After training, the model generates text one token at a time.
+
+*Layer Normalization
+
+TinyGPT uses Pre-LayerNorm.
+*Feed-Forward Network
+
+After self-attention, the representation passes through a position-wise feed-forward network.
