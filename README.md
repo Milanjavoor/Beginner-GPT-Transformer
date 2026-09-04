@@ -162,7 +162,33 @@ TinyGPT uses Pre-LayerNorm.
 
 After self-attention, the representation passes through a position-wise feed-forward network.
 
+Key Takeaways
 
+This project demonstrates that a GPT-style language model can be constructed from relatively simple building blocks.
+
+At a high level, the entire model can be understood as:
+Tokens
+   |
+   v
+Embeddings
+   |
+   v
+Self-Attention
+   |
+   v
+Contextual Representations
+   |
+   v
+Feed-Forward Networks
+   |
+   v
+Repeated Transformer Blocks
+   |
+   v
+Logits
+   |
+   v
+Next Token Prediction
 
 Educational Philosophy
 
@@ -177,7 +203,53 @@ However, implementing a small Transformer from scratch provides a much deeper un
 By building TinyGPT manually, the Transformer becomes less of a black box and more of a system that can be inspected, modified, debugged, and experimented with.
 
 This project therefore focuses on understanding the fundamental ideas behind GPT rather than simply achieving the largest possible model or the best possible generated text.
-
+Learning Roadmap:
+Neural Networks
+       |
+       v
+CNNs / RNNs / LSTMs / GRUs
+       |
+       v
+Attention Mechanism
+       |
+       v
+Transformers
+       |
+       v
+Transformer From Scratch
+       |
+       v
+TinyGPT
+       |
+       v
+Subword Tokenization
+       |
+       v
+Modern GPT Architecture
+       |
+       v
+RoPE / RMSNorm / SwiGLU
+       |
+       v
+Large-Scale Pretraining
+       |
+       v
+Fine-Tuning
+       |
+       v
+Instruction Tuning
+       |
+       v
+Preference Optimization
+       |
+       v
+Retrieval-Augmented Generation
+       |
+       v
+LLM Applications
+       |
+       v
+AI Agents
 Inspiration
 
 This project follows the educational philosophy of implementing a minimal GPT architecture from first principles.
